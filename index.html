@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+
+    <title>Baron</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav id="navbar">
+          <ul id="nav" class="nav-logo">
+            <li>
+              <img id="logo_nav" src="assets/svg/logo.svg" alt="Logo" />
+            </li>
+          </ul>
+
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Acerca de</a></li>
+            <li><a href="#about">Proyectos</a></li>
+            <li><a href="#services">Repositorio</a></li>
+            <li><a href="#novedades">Novedades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li>
+              <a href="#language">EN / <strong>ES</strong></a>
+            </li>
+            <li id="search-hamburger">
+              <a href="#contact"
+                ><img id="search_nav" src="assets/svg/search.svg" alt="Buscar"
+              /></a>
+              <span style="display: none"> EN / ES</span>
+            </li>
+          </ul>
+        </nav>
+
+        <nav id="navbarResponsive">
+          <ul id="navResponsive" class="nav-logoResponsive">
+            <li>
+              <img
+                id="letter-logoResponsive"
+                src="assets/svg/letter-logo.svg"
+              />
+            </li>
+            <li>
+              <img
+                id="logo_navResponsive"
+                src="assets/svg/logo.svg"
+                alt="Logo"
+              />
+            </li>
+            <button class="hamburger-menu" id="hamburger-btn">
+              <img src="assets/svg/menu.svg" alt="Menu" />
+            </button>
+          </ul>
+
+          <ul class="nav-links" id="navLinksResponsive">
+            <li><a href="#home">Acerca de</a></li>
+            <li><a href="#about">Proyectos</a></li>
+            <li><a href="#services">Repositorio</a></li>
+            <li><a href="#novedades">Novedades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li id="search-hamburger">
+              <a href="#contact"
+                ><img
+                  id="search_nav"
+                  src="assets/svg/searchWhite.svg"
+                  alt="Buscar"
+              /></a>
+              <span style="color: #ffff; font-size: 24px">
+                EN /<span style="font-weight: bold"> ES</span></span
+              >
+            </li>
+            <li>
+              <div id="button-hamburger">
+                <button
+                  style="width: 400; height: 60; margin: 0"
+                  class="newsletter-buttonResponsive"
+                >
+                  SUSCRIBITE A NUESTRO NEWSLETTER <span>→</span>
+                </button>
+                <a href="#"
+                  ><img src="assets/svg/youtube.svg" alt="YouTube"
+                /></a>
+                <a href="#"
+                  ><img src="assets/svg/twitter.svg" alt="Twitter"
+                /></a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="title">
+        <h2>Bienvenidos</h2>
+      </div>
+
+      <section id="home">
+        <div class="home-container">
+          <p>
+            Desarrollamos y
+            <span style="display: inline" class="aqua-words"
+              >promovemos investigacion,</span
+            >
+            innovacion y divulgacion sobre
+            <span
+              >tecnologia digital
+              <svg
+                width="551"
+                height="8"
+                viewBox="0 0 553 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M552 3.99078C463.354 1.73387 271.197 -1.42581 211.74 3.99078C137.419 10.7615 6.47206 3.99078 1.92178 3.99078C-1.71844 3.99078 6.13503 3.23848 13.0447 2.86233"
+                  stroke="black"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+            y aprendizaje, en
+            <span
+              >Uruguay y America Latina
+              <svg
+                width="828"
+                height="8"
+                viewBox="0 0 828 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M827 4C775.135 6.26387 651.694 9.43329 572.846 4C493.998 -1.43329 158.762 1.73613 1 4"
+                  stroke="black"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </p>
+        </div>
+      </section>
+
+      <section id="carrousel" class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img src="assets/images/Mask group.png" alt="Image 1" />
+              <span></span>
+            </li>
+            <li class="glide__slide">
+              <img src="assets/images/Mask group (3).png" alt="Image 2" />
+              <span></span>
+            </li>
+            <li class="glide__slide">
+              <img src="assets/images/Mask group (2).png" alt="Image 3" />
+              <span></span>
+            </li>
+            <li class="glide__slide">
+              <img src="assets/images/Mask group (1).png" alt="Image 4" />
+              <span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            Prev
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            Next
+          </button>
+        </div>
+      </section>
+
+      <section id="services">
+        <div>
+          <p>
+            Somos una organización autónoma que busca resolver desafíos
+            relacionados con el aprendizaje y la mediación de las tecnologías, a
+            través de metodologías innovadoras y un abordaje práctico, social y
+            participativo.
+          </p>
+        </div>
+      </section>
+
+      <section id="socials">
+        <div>
+          <div class="row1">
+            <div class="row1-enfoque">
+              <h6>Nuestro enfoque</h6>
+              <p class="enfoque-text">
+                Está orientada a problematizar y aportar<br />
+                ideas y soluciones a la implementación actual y futura de Boron
+                Studio y de otros actores nacionales e internacionales.
+              </p>
+            </div>
+            <img src="assets/images/girl.png" />
+          </div>
+
+          <div class="row1">
+            <img src="assets/images/socials.png" />
+            <div class="row2">
+              <div class="socials-top">
+                <h6>Seguinos en twitter</h6>
+                <img id="twitter-image" src="assets/svg/twitterwhite.svg" />
+              </div>
+
+              <div class="socials-middle" id="socials-content">
+                <h5>Boronstudio</h5>
+                <span style="display: block">@Boronstudio</span>
+                <span>2 hs</span>
+                <p>
+                  📌<span>#OportunidadLaboral</span> Llamado abierto <br />para
+                  sumarse al equipo de <span>@Boronstudio</span><br />
+                  master digital.👩‍💻👨‍💻<br />
+                  Más información 👉<span>https://bit.ly/2OobIHS</span>
+                </p>
+              </div>
+
+              <div id="socials-arrows">
+                <div id="arrow-left">
+                  <img
+                    class="image-hover first-image"
+                    src="assets/svg/arrow.svg"
+                  />
+                </div>
+                <div id="arrow-right">
+                  <img id="image-hover" src="assets/svg/arrow.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="repository">
+        <div class="repository-container">
+          <div class="repository-container-title">
+            <h5>Repositorio</h5>
+            <p>Respositorio institucional de Boron Studio</p>
+          </div>
+          <div class="repository-links">
+            <ul class="link_container">
+              <hr />
+              <li>
+                <a>Autor</a>
+                <div class="svg-container">
+                  <svg
+                    width="35"
+                    height="27"
+                    viewBox="0 0 38 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.6826 1L36.1826 14.5L22.6826 28"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M35.2045 14.5H1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <div class="repository-hover autor"></div>
+              <hr />
+              <li>
+                <a>Titulo</a>
+                <div class="svg-container">
+                  <svg
+                    width="35"
+                    height="27"
+                    viewBox="0 0 38 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.6826 1L36.1826 14.5L22.6826 28"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M35.2045 14.5H1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <div class="repository-hover titulo"></div>
+              <hr />
+              <li>
+                <a>Lineas de navegacion</a>
+                <div class="svg-container">
+                  <svg
+                    width="35"
+                    height="27"
+                    viewBox="0 0 38 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.6826 1L36.1826 14.5L22.6826 28"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M35.2045 14.5H1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <div class="repository-hover navegacion"></div>
+              <hr />
+              <li>
+                <a>Descripciones</a>
+                <div class="svg-container">
+                  <svg
+                    width="35"
+                    height="27"
+                    viewBox="0 0 38 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.6826 1L36.1826 14.5L22.6826 28"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M35.2045 14.5H1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <div class="repository-hover descripciones"></div>
+              <hr />
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="novedades">
+        <div class="novedades-title">
+          <h2>Novedades</h2>
+        </div>
+        <div class="novedades-container">
+          <div class="novedad-item">
+            <div class="novedad-box">
+              <h3>Webinar</h3>
+              <span>
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5078 16.6914H0.625V11.8242H11.5078V0.667969H16.4297V11.8242H27.3398V16.6914H16.4297V27.793H11.5078V16.6914Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+              <div class="hover-image webinar"></div>
+            </div>
+
+            <div class="novedad-text">
+              <p>Boron Studio invita a webinar sobre educación híbrida</p>
+            </div>
+          </div>
+
+          <div class="novedad-item">
+            <div class="novedad-box">
+              <h3>Evento</h3>
+              <span
+                ><svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5078 16.6914H0.625V11.8242H11.5078V0.667969H16.4297V11.8242H27.3398V16.6914H16.4297V27.793H11.5078V16.6914Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+              <div class="hover-image evento"></div>
+            </div>
+            <div class="novedad-text">
+              <p>Boron Studio invita a webinar sobre educacion hibrida</p>
+            </div>
+          </div>
+          <div class="novedad-item">
+            <div class="novedad-box">
+              <h3>Evento</h3>
+              <span
+                ><svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5078 16.6914H0.625V11.8242H11.5078V0.667969H16.4297V11.8242H27.3398V16.6914H16.4297V27.793H11.5078V16.6914Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+              <div class="hover-image event"></div>
+            </div>
+            <div class="novedad-text">
+              <p>
+                Boron Studio presenta experiencia de educación a distancia en
+                México
+              </p>
+            </div>
+          </div>
+
+          <div class="novedad-item">
+            <div class="novedad-box">
+              <h3>Publicacion</h3>
+              <span
+                ><svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5078 16.6914H0.625V11.8242H11.5078V0.667969H16.4297V11.8242H27.3398V16.6914H16.4297V27.793H11.5078V16.6914Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+              <div class="hover-image publicacion"></div>
+            </div>
+            <div class="novedad-text">
+              <p>
+                Publicación del libro "Tecnología: Lo que puede y no puede hacer
+                por la educación"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          <div>
+            <div>
+              <img
+                id="footer-logo"
+                src="assets/svg/whitelogo.svg"
+                alt="Boron Logo"
+                class="footer-logo"
+                style="margin-bottom: 40px"
+              />
+            </div>
+            <div class="footer-newsletter">
+              <p style="font-size: 32px">
+                Enterate De Las<br />Últimas Novedades
+              </p>
+              <div class="footer-socials">
+                <button class="newsletter-button">
+                  SUSCRIBITE A NUESTRO NEWSLETTER <span>→</span>
+                </button>
+                <div class="footer-socialmedia">
+                  <p class="footer-mail">info@boronstudio.com</p>
+                  <div style="display: flex; gap: 30px">
+                    <a href="#"
+                      ><img src="assets/svg/youtube.svg" alt="YouTube"
+                    /></a>
+                    <a href="#"
+                      ><img src="assets/svg/twitter.svg" alt="Twitter"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <ul>
+              <li><a href="#">Acerca De</a></li>
+              <li><a href="#">Proyectos</a></li>
+              <li><a href="#">Repositorio</a></li>
+              <li><a href="#">Novedades</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Líneas De Investigación</a></li>
+              <li><a href="#">Información Financiera</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>©2023 Todos los derechos reservados. Boron studio</p>
+          <p>BY Boron Studio</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
