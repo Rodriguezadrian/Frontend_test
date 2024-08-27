@@ -1829,9 +1829,6 @@ footer {
     width: 100%;
     overflow-x: hidden;
   }
-  .container {
-    background-color: green;
-  }
   header {
     width: 100%;
     padding: 0;
